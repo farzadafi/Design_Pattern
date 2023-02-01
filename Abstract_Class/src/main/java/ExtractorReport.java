@@ -28,7 +28,7 @@ public abstract class ExtractorReport {
             Matcher matcher = getPattern().matcher(nextLine);
             boolean matches = matcher.matches();
             if (matches) {
-                out.append(nextLine).append("/n");
+                out.append(nextLine).append("\n");
             }
         }
         return Strings.isNullOrEmpty(out.toString()) ? "Empty file" : out.toString();
