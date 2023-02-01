@@ -2,6 +2,7 @@ import com.google.common.base.Strings;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.net.URL;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -14,7 +15,9 @@ public abstract class ExtractorReport {
 
     private String parse(String path) throws FileNotFoundException {
         StringBuilder out = new StringBuilder();
-        File file = new File(path);
+        URL url = getClass().getResource(path);
+        assert url != null;
+        File file = new File(url.getPath());
         Scanner scanner = new Scanner(file);
         if (scanner.hasNext())
             scanner.nextLine();
