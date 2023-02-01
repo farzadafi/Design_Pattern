@@ -6,7 +6,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public abstract class ExtractorRepost {
+public abstract class ExtractorReport {
 
     public abstract Pattern getPattern();
 
