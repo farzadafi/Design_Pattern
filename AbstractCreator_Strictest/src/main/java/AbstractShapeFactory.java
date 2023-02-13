@@ -22,3 +22,11 @@ class CircleFactory extends AbstractShapeFactory {
         return new Circle();
     }
 }
+
+class SquareFactory extends AbstractShapeFactory {
+
+    @Override
+    protected Shape factoryMethod() {
+        return new Square();
+    }
+}
