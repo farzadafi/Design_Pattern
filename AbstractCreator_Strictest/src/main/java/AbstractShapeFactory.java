@@ -14,3 +14,11 @@ class RectangleFactory extends AbstractShapeFactory {
         return new Rectangle();
     }
 }
+
+class CircleFactory extends AbstractShapeFactory {
+
+    @Override
+    protected Shape factoryMethod() {
+        return new Circle();
+    }
+}
