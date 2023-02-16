@@ -9,6 +9,12 @@ enum ShapeType {
     SQUARE
 }
 
+enum ColorType {
+    GREEN,
+    RED,
+    BLUE
+}
+
 class ShapeFactory extends AbstractFactory {
 
     @Override
@@ -47,7 +53,7 @@ class ColorFactory extends AbstractFactory {
     }
 
     @Override
-    Shape getShape(String shape) {
+    Shape getShape(ShapeType shapeType) {
         return null;
     }
 }
