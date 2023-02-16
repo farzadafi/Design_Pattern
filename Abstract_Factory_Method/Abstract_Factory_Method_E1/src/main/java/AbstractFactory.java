@@ -1,22 +1,25 @@
 public abstract class AbstractFactory {
     abstract Color getColor(String color);
-    abstract Shape getShape(String shape);
+    abstract Shape getShape(ShapeType shapeType);
+}
+
+enum ShapeType {
+    CIRCLE,
+    RECTANGLE,
+    SQUARE
 }
 
 class ShapeFactory extends AbstractFactory {
 
     @Override
-    Shape getShape(String shape) {
-        if(shape == null )
-            return null;
-        if(shape.equalsIgnoreCase("CIRCLE"))
-            return new Circle();
-        else if(shape.equalsIgnoreCase("RECTANGLE"))
-            return new Rectangle();
-        else if(shape.equalsIgnoreCase("SQUARE"))
-            return new Square();
-
-        return null;
+    Shape getShape(ShapeType shapeType) {
+        Shape shape = null;
+        switch (shapeType) {
+            case CIRCLE -> shape = new Circle();
+            case SQUARE -> shape = new Square();
+            case RECTANGLE -> shape = new Rectangle();
+        }
+        return shape;
     }
 
     @Override
