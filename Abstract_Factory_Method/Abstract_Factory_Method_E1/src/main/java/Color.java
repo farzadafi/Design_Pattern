@@ -17,3 +17,11 @@ class Red implements Color {
 
     }
 }
+
+class Blue implements Color {
+
+    @Override
+    public void fill() {
+
+    }
+}
