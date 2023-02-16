@@ -1,12 +1,13 @@
 public class FactoryProducer {
 
-    public static AbstractFactory getFactory(String choice) {
-        if(choice.equalsIgnoreCase("SHAPE"))
-            return new ShapeFactory();
-        else if(choice.equalsIgnoreCase("COLOR"))
-            return new ColorFactory();
+    public static AbstractFactory getFactory(FactoryName choice) {
+        AbstractFactory abstractFactory = null;
+        switch (choice) {
+            case COLOR -> abstractFactory = new ColorFactory();
+            case SHAPE -> abstractFactory = new ShapeFactory();
 
-        return null;
+        }
+        return abstractFactory;
     }
 }
 
