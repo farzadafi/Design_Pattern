@@ -1,5 +1,6 @@
 public abstract class AbstractFactory {
-    abstract Color getColor(String color);
+    abstract Color getColor(ColorType colorType);
+
     abstract Shape getShape(ShapeType shapeType);
 }
 
@@ -29,7 +30,7 @@ class ShapeFactory extends AbstractFactory {
     }
 
     @Override
-    Color getColor(String color) {
+    Color getColor(ColorType colorType) {
         return null;
     }
 
@@ -38,18 +39,16 @@ class ShapeFactory extends AbstractFactory {
 class ColorFactory extends AbstractFactory {
 
     @Override
-    Color getColor(String color) {
-        if(color == null)
-            return null;
+    Color getColor(ColorType colorType) {
+        Color color = null;
 
-        if(color.equalsIgnoreCase("RED"))
-            return new Red();
-        else if(color.equalsIgnoreCase("GREEN"))
-            return new Green();
-        else if(color.equalsIgnoreCase("BLUE"))
-            return new Blue();
+        switch (colorType) {
+            case RED -> color = new Red();
+            case BLUE -> color = new Blue();
+            case GREEN -> color = new Green();
+        }
 
-        return null;
+        return color;
     }
 
     @Override
