@@ -9,3 +9,11 @@ class Rectangle implements Shape {
 
     }
 }
+
+class Square implements Shape {
+
+    @Override
+    public void draw() {
+
+    }
+}
