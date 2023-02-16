@@ -13,13 +13,13 @@ public class Client {
 
         AbstractFactory colorFactory = FactoryProducer.getFactory(FactoryName.COLOR);
 
-        Color color1 = colorFactory.getColor("GREEN");
+        Color color1 = colorFactory.getColor(ColorType.GREEN);
         color1.fill();
 
-        Color color2 = colorFactory.getColor("BLUE");
+        Color color2 = colorFactory.getColor(ColorType.BLUE);
         color2.fill();
 
-        Color color3 = colorFactory.getColor("RED");
+        Color color3 = colorFactory.getColor(ColorType.RED);
         color3.fill();
     }
 }
