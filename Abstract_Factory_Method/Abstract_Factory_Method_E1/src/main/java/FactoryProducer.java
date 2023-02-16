@@ -9,3 +9,8 @@ public class FactoryProducer {
         return null;
     }
 }
+
+enum FactoryName {
+    SHAPE,
+    COLOR
+}
