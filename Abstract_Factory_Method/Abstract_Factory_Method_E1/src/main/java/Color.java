@@ -9,3 +9,11 @@ class Green implements Color {
 
     }
 }
+
+class Red implements Color {
+
+    @Override
+    public void fill() {
+
+    }
+}
