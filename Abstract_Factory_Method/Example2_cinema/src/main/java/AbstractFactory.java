@@ -30,7 +30,12 @@ class BollywoodFactory extends AbstractFactory {
 
     @Override
     public BollywoodMovie getBollywoodFactory(Genera genera) {
-        return null;
+        BollywoodMovie bollywoodMovie = null;
+        switch (genera) {
+            case ACTION -> bollywoodMovie = new BollywoodAction();
+            case COMEDY -> bollywoodMovie = new BollywoodComedy();
+        }
+        return bollywoodMovie;
     }
 
     @Override
