@@ -1,6 +1,6 @@
 public abstract class AbstractFactory {
-    public abstract HollywoodMovie getHollywoodFactory();
-    public abstract BollywoodMovie getBollywoodFactory();
+    public abstract HollywoodMovie getHollywoodFactory(Genera genera);
+    public abstract BollywoodMovie getBollywoodFactory(Genera genera);
 }
 
 enum Genera {
