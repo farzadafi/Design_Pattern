@@ -8,3 +8,16 @@ enum Genera {
     ACTION
 }
 
+class HollywoodFactory extends AbstractFactory {
+
+    @Override
+    public HollywoodMovie getHollywoodFactory(Genera genera) {
+        return null;
+    }
+
+    @Override
+    public BollywoodMovie getBollywoodFactory(Genera genera) {
+        return null;
+    }
+}
+
