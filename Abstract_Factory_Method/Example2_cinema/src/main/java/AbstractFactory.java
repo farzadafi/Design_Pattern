@@ -12,7 +12,12 @@ class HollywoodFactory extends AbstractFactory {
 
     @Override
     public HollywoodMovie getHollywoodFactory(Genera genera) {
-        return null;
+        HollywoodMovie hollywoodMovie = null;
+        switch (genera) {
+            case ACTION -> hollywoodMovie = new HollywoodAction();
+            case COMEDY -> hollywoodMovie = new HollywoodComedy();
+        }
+        return hollywoodMovie;
     }
 
     @Override
