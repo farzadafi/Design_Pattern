@@ -26,3 +26,17 @@ class HollywoodFactory extends AbstractFactory {
     }
 }
 
+class BollywoodFactory extends AbstractFactory {
+
+    @Override
+    public BollywoodMovie getBollywoodFactory(Genera genera) {
+        return null;
+    }
+
+    @Override
+    public HollywoodMovie getHollywoodFactory(Genera genera) {
+        return null;
+    }
+
+}
+
