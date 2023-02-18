@@ -7,3 +7,10 @@ enum FactoryType {
     VIDEO_CONVERTER
 }
 
+class MusicConverterFactory implements AbstractFactory<MusicConverter> {
+
+    @Override
+    public MusicConverter getFactory(FactoryType factoryType) {
+        return null;
+    }
+}
