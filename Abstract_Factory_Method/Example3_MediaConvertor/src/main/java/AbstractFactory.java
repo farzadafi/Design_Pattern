@@ -17,10 +17,15 @@ enum VideoFactoryType {
     WEBM_TO_MP4
 }
 
-class MusicConverterFactory implements AbstractFactory<MusicConverter> {
+class MusicConverterFactory implements AbstractFactory<MusicConverter, MusicFactoryType> {
 
     @Override
-    public MusicConverter getFactory(FactoryType factoryType) {
-        return null;
+    public MusicConverter getFactory(MusicFactoryType factoryType) {
+        MusicConverter musicConverter = null;
+        switch (factoryType) {
+            case AAC_TO_MP3 -> musicConverter = new AACToMp3();
+            case MP3_TO_AAC -> musicConverter = new Mp3ToAAC();
+        }
+        return musicConverter;
     }
 }
