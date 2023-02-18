@@ -9,3 +9,11 @@ class Mp3ToAAC implements MusicConverter {
         System.out.println("Mp3 to AAC convert!");
     }
 }
+
+class AACToMp3 implements MusicConverter {
+
+    @Override
+    public void convert() {
+        System.out.println("AAC to Mp3 convert!");
+    }
+}
