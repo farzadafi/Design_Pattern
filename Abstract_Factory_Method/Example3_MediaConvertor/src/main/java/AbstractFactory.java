@@ -7,6 +7,11 @@ enum FactoryType {
     VIDEO_CONVERTER
 }
 
+enum MusicFactoryType {
+    MP3_TO_AAC,
+    AAC_TO_MP3
+}
+
 class MusicConverterFactory implements AbstractFactory<MusicConverter> {
 
     @Override
