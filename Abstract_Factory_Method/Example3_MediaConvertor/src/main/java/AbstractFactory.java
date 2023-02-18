@@ -34,6 +34,11 @@ class VideoConverterFactory implements AbstractFactory<VideoConverter, VideoFact
 
     @Override
     public VideoConverter getFactory(VideoFactoryType factoryType) {
-        return null;
+        VideoConverter videoConverter = null;
+        switch (factoryType) {
+            case MP4_TO_WEBM -> videoConverter = new Mp4ToWebm();
+            case WEBM_TO_MP4 -> videoConverter = new WebmToMp4();
+        }
+        return videoConverter;
     }
 }
