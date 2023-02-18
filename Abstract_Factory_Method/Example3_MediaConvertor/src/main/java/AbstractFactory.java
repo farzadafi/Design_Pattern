@@ -29,3 +29,11 @@ class MusicConverterFactory implements AbstractFactory<MusicConverter, MusicFact
         return musicConverter;
     }
 }
+
+class VideoConverterFactory implements AbstractFactory<VideoConverter, VideoFactoryType> {
+
+    @Override
+    public VideoConverter getFactory(VideoFactoryType factoryType) {
+        return null;
+    }
+}
