@@ -1,5 +1,5 @@
-public interface AbstractFactory<T> {
-    T  getFactory(FactoryType factoryType);
+public interface AbstractFactory<T, K> {
+    T  getFactory(K factoryType);
 }
 
 enum FactoryType {
