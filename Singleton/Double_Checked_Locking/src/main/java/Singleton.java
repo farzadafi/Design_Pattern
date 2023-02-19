@@ -1,5 +1,6 @@
 public class Singleton {
 
+    //todo volatile this instance?
     private static Singleton Instance = null;
 
     private int data = 0;
@@ -10,7 +11,9 @@ public class Singleton {
 
     public static Singleton getInstance() {
         if (Instance == null)
-            Instance = new Singleton();
+            synchronized (Singleton.class) {
+                Instance = new Singleton();
+            }
         return Instance;
     }
 
