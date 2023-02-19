@@ -1,3 +1,4 @@
+//this method is not recommended, because synchronized is very expensive
 public class Singleton {
 
 
@@ -9,7 +10,7 @@ public class Singleton {
 
     }
 
-    public static Singleton getInstance() {
+    public synchronized static Singleton getInstance() {
         if (Instance == null)
             Instance = new Singleton();
         return Instance;
