@@ -1,3 +1,4 @@
+// this method is not recommended, because is not Thread safe
 public class Singleton {
 
     private static Singleton Instance = null;
