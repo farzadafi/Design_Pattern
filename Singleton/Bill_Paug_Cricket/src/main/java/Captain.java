@@ -8,9 +8,12 @@ public class Captain {
 
         private static final Captain captain = new Captain();
 
+        private static Captain getCaptain () {
+            return captain;
+        }
     }
 
     public static Captain getInstance() {
-        return CaptainSingleton.captain;
+        return CaptainSingleton.getCaptain();
     }
 }
