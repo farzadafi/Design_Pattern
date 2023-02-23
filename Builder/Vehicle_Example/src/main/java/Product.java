@@ -2,7 +2,7 @@ import java.util.LinkedList;
 
 public class Product {
 
-    private LinkedList<String> parts;
+    private final LinkedList<String> parts;
 
     public Product() {
         parts = new LinkedList<>();
