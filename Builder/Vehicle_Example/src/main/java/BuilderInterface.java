@@ -7,7 +7,7 @@ public interface BuilderInterface {
 
 class Car implements BuilderInterface {
 
-    private Product product = new Product();
+    private final Product product = new Product();
 
     @Override
     public void buildBody() {
@@ -32,7 +32,7 @@ class Car implements BuilderInterface {
 
 class MotorCycle implements BuilderInterface {
 
-    private Product product = new Procuct();
+    private final Product product = new Product();
 
     @Override
     public void buildBody() {
