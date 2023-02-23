@@ -21,7 +21,7 @@ class Car implements BuilderInterface {
 
     @Override
     public void addHeadlights() {
-        product.add("2 headlights are added")
+        product.add("2 headlights are added");
     }
 
     @Override
@@ -46,7 +46,7 @@ class MotorCycle implements BuilderInterface {
 
     @Override
     public void addHeadlights() {
-        product.add("1 headlights are added")
+        product.add("1 headlights are added");
     }
 
     @Override
