@@ -6,7 +6,7 @@ public class Client {
                 .openingBalance(100)
                 .atRate(2.5)
                 .build();
-        BankAccount account1 = new BankAccount("farzad", 12, "zarand", 12);
+        BankAccount account1 = new BankAccount(1, "farzad", 12, "zarand", 12);
 
         System.out.println(account);
         System.out.println(account1);
