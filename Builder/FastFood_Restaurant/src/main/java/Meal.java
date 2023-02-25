@@ -1,3 +1,5 @@
+import item.Item;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,8 +22,8 @@ public class Meal {
    public void showItems(){
    
       for (Item item : items) {
-         System.out.print("Item : " + item.name());
-         System.out.print(", Packing : " + item.packing().pack());
+         System.out.print("item.Item : " + item.name());
+         System.out.print(", packing.Packing : " + item.packing().pack());
          System.out.println(", Price : " + item.price());
       }		
    }	

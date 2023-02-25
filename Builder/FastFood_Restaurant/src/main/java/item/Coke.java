@@ -1,3 +1,5 @@
+package item;
+
 public class Coke extends ColdDrink {
 
    @Override
@@ -7,6 +9,6 @@ public class Coke extends ColdDrink {
 
    @Override
    public String name() {
-      return "Coke";
+      return "item.Coke";
    }
 }

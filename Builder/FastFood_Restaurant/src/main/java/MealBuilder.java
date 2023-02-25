@@ -1,3 +1,8 @@
+import item.ChickenBurger;
+import item.Coke;
+import item.Pepsi;
+import item.VegBurger;
+
 public class MealBuilder {
 
    public Meal prepareVegMeal (){

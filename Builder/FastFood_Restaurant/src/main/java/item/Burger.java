@@ -1,3 +1,8 @@
+package item;
+
+import packing.Packing;
+import packing.Wrapper;
+
 public abstract class Burger implements Item {
 
    @Override

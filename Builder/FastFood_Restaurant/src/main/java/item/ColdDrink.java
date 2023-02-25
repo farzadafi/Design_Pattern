@@ -1,3 +1,8 @@
+package item;
+
+import packing.Bottle;
+import packing.Packing;
+
 public abstract class ColdDrink implements Item {
 
 	@Override
