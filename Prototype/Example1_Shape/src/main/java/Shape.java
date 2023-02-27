@@ -56,3 +56,15 @@ class Circle extends Shape {
         System.out.println("Inside Circle::draw() method.");
     }
 }
+
+class Rectangle extends Shape {
+
+    public Rectangle() {
+        type = "Rectangle";
+    }
+
+    @Override
+    void draw() {
+        System.out.println("Inside Rectangle::draw() method.");
+    }
+}
