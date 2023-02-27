@@ -32,3 +32,15 @@ public abstract class Shape implements Cloneable {
         return clone;
     }
 }
+
+class Sqaure extends Shape {
+
+    public Sqaure() {
+        type = "Square";
+    }
+
+    @Override
+    void draw() {
+        System.out.println("Inside Square::draw() method.");
+    }
+}
