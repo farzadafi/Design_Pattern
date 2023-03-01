@@ -9,6 +9,15 @@ public class BasicCar {
         this.price = price;
     }
 
+    public BasicCar copy(BasicCar original) throws IOException, ClassNotFoundException {
+        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+        ObjectOutputStream out = new ObjectOutputStream(bos);
+        out.writeObject(original);
+
+        ByteArrayInputStream bis = new ByteArrayInputStream(bos.toByteArray());
+        ObjectInputStream in = new ObjectInputStream(bis);
+        return (BasicCar) in.readObject();
+    }
 
     @Override
     public String toString() {
