@@ -16,3 +16,10 @@ public class BasicCar implements Cloneable {
         }
     }
 }
+
+class Nano extends BasicCar {
+
+    public Nano(String modelName, Long price) {
+        super(modelName, price);
+    }
+}
