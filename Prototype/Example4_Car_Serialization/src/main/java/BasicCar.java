@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class BasicCar {
+public class BasicCar implements Serializable{
     private String modelName;
     private Long price;
 
