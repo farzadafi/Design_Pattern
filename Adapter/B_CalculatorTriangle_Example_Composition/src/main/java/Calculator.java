@@ -4,11 +4,8 @@ public interface Calculator {
 
 class CalculatorImpel implements Calculator {
 
-    private Rectangle rectangle;
-
     @Override
     public double getArea(Rectangle rectangle) {
-        this.rectangle = rectangle;
-        return rectangle.lengh * rectangle.width;
+        return rectangle.length * rectangle.width;
     }
 }
