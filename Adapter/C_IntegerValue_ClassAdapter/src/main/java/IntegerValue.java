@@ -9,3 +9,11 @@ class IntegerValueImpel implements IntegerValue {
         return 5;
     }
 }
+
+class ClassAdapter extends IntegerValueImpel {
+
+    @Override
+    public int getInteger() {
+        return 2 + super.getInteger();
+    }
+}
