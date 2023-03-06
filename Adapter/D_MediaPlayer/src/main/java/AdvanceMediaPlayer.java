@@ -17,3 +17,16 @@ class Mp4Player implements AdvanceMediaPlayer {
         System.out.println("I listen to " + fileName);
     }
 }
+
+class VlcPlayer implements AdvanceMediaPlayer {
+
+    @Override
+    public void loadFileName(String fileName) {
+
+    }
+
+    @Override
+    public void listen() {
+
+    }
+}
