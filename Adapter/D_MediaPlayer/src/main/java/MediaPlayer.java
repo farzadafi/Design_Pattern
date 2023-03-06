@@ -1,13 +1,11 @@
 public interface MediaPlayer {
-    void play();
+    void play(String fileName);
 }
 
 class AudioPlayer implements MediaPlayer {
 
-    private String fileName;
-
     @Override
-    public void play() {
+    public void play(String fileName) {
         System.out.println("AudioPlayer play " + fileName);
     }
 }
