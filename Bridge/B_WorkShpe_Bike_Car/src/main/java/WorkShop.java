@@ -9,3 +9,11 @@ class Produce extends WorkShop {
         System.out.println("Produced");
     }
 }
+
+class Assemble extends WorkShop {
+
+    @Override
+    public void work() {
+        System.out.println("And Assembled");
+    }
+}
