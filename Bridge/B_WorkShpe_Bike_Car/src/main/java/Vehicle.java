@@ -14,4 +14,6 @@ public abstract class Vehicle {
     public WorkShop getWorkShop2() {
         return this.workShop2;
     }
+
+    abstract public void manufacture();
 }
