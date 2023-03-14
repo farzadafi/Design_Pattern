@@ -41,4 +41,7 @@ public abstract class MenuComponent {
     public int hashCode() {
         return Objects.hash(url, name);
     }
+
+    @Override
+    public abstract String toString();
 }
