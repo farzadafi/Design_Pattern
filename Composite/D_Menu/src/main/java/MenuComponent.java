@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class MenuComponent {
+public abstract class MenuComponent {
     private final String url;
     private final String name;
     private List<MenuComponent> children;
