@@ -6,6 +6,21 @@ public class Menu extends MenuComponent {
 
     @Override
     public String toString() {
-        return null;
+        StringBuilder stringBuilder = new StringBuilder("::menu::");
+        stringBuilder.append(print());
+        getChildren().forEach(MenuComponent::print);
+        return stringBuilder.toString();
+    }
+
+    @Override
+    public MenuComponent add(MenuComponent menuComponent) {
+        getChildren().add(menuComponent);
+        return this;
+    }
+
+    @Override
+    public MenuComponent remove(MenuComponent menuComponent) {
+        getChildren().remove(menuComponent);
+        return this;
     }
 }
