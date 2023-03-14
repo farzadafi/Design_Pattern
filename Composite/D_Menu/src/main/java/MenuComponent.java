@@ -44,4 +44,8 @@ public abstract class MenuComponent {
 
     @Override
     public abstract String toString();
+
+    protected String print() {
+        return String.format("%s->%s%n",url, name);
+    }
 }
