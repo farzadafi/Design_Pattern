@@ -8,7 +8,7 @@ public class Menu extends MenuComponent {
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder("::menu::");
         stringBuilder.append(print());
-        getChildren().forEach(MenuComponent::print);
+        getChildren().forEach(leaf -> stringBuilder.append(leaf.toString()));
         return stringBuilder.toString();
     }
 
