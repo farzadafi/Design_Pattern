@@ -29,6 +29,10 @@ public abstract class MenuComponent {
         return name;
     }
 
+    public List<MenuComponent> getChildren() {
+        return children;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
