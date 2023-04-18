@@ -25,4 +25,8 @@ public class SuperVisor implements Faculty{
     public String getDetails() {
         return (supervisorName + " is the " + departmentName);
     }
+
+    public List<Faculty> getFacultyList() {
+        return facultyList;
+    }
 }
