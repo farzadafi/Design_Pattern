@@ -10,3 +10,12 @@ abstract public class AbstractDecorator {
                 component.doJob();
     }
 }
+
+class ConcreteDecoratorEx_1 extends AbstractDecorator {
+    public void doJob() {
+        super.doJob();
+
+        // add additional responsibilities
+        System.out.println("I am explicitly from Ex_1");
+    }
+}
