@@ -22,9 +22,13 @@ class ConcreteDecoratorEx_1 extends AbstractDecorator {
 
 class ConcreteDecoratorEx_2 extends AbstractDecorator {
     public void doJob() {
+
+        System.out.println("Start Ex_2");
+
         super.doJob();
 
         // add additional responsibilities
         System.out.println("I am explicitly from Ex_2");
+        System.out.println("End Ex_2");
     }
 }
