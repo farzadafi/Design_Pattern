@@ -8,6 +8,11 @@ public class EncryptedCloudStream implements Stream {
 
     @Override
     public void write(String data) {
+        String encrypt = encrypt(data);
+        stream.write(encrypt);
+    }
 
+    private String encrypt(String data) {
+        return "^@#%@%#$%";
     }
 }
