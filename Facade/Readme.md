@@ -1,6 +1,8 @@
 # Facade
 
-*please see this image on light mode!*
+*please see this image on light mode!, or click on it for open*
+<br>
+
 ![Alt facade](./image/facade_concept.svg)
 
 That provides a simplified **interface** to a larger body of code, such as a library or complex subsystem.
