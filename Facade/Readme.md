@@ -39,14 +39,37 @@ simple, **high-level** interface that clients can use to interact with the syste
    flexibility of the system. Clients may only be able to perform certain tasks through the Facade, which means they may
    need to modify the Facade or access the underlying system directly to perform more complex operations.
 
-2. **Increased coupling**: The Facade pattern can increase the coupling between the client and the subsystem, as the client is
-now dependent on the Facade to interact with the system. Changes to the Facade or the underlying system may require
-changes to the client code, which can lead to maintenance issues.
+2. **Increased coupling**: The Facade pattern can increase the coupling between the client and the subsystem, as the
+   client is
+   now dependent on the Facade to interact with the system. Changes to the Facade or the underlying system may require
+   changes to the client code, which can lead to maintenance issues.
 
-3. **Limited extensibility**: The Facade pattern is designed to simplify the interface to a complex system, but it may not be
-suitable for systems that need to be highly extensible or configurable. Adding new functionality to the system may
-require changes to the Facade, which can lead to maintenance issues and increased complexity.
+3. **Limited extensibility**: The Facade pattern is designed to simplify the interface to a complex system, but it may
+   not be
+   suitable for systems that need to be highly extensible or configurable. Adding new functionality to the system may
+   require changes to the Facade, which can lead to maintenance issues and increased complexity.
 
 4. **Additional overhead**: The Facade pattern introduces an additional layer of abstraction between the client and the
-subsystem, which can add overhead to the system. Depending on the complexity of the system and the number of clients
-using the Facade, this overhead can become significant.
+   subsystem, which can add overhead to the system. Depending on the complexity of the system and the number of clients
+   using the Facade, this overhead can become significant.
+
+<h3>how to implement?</h3>
+
+1. **Identify the complex subsystem**: Identify the parts of the system that are complex and could be simplified for
+   clients.
+   These parts could consist of multiple classes, interfaces, and methods.
+
+2. **Define a Facade class**: Create a new class that will act as the simplified interface to the complex subsystem. The
+   Facade
+   class should contain a private instance of the complex subsystem created using composition, and expose a set of
+   methods
+   that clients can use to interact with the system.
+
+3. **Implement the Facade methods using composition**: Implement the methods of the Facade class, which should delegate
+   the
+   work to the appropriate classes and methods in the subsystem. This should be done using composition to create an
+   instance of the complex subsystem within the Facade class. The Facade class should hide the details of the subsystem
+   from the client and provide a simplified, high-level interface.
+
+4. **Test the Facade**: Test the Facade class to ensure that it provides the desired functionality and simplifies the
+   interface to the complex subsystem.
