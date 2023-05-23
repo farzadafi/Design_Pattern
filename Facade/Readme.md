@@ -30,3 +30,21 @@ simple, **high-level** interface that clients can use to interact with the syste
 3. Decoupling clients from the implementation details of a system, allowing the system to evolve without affecting its
    clients.
 4. Promoting code reuse by providing a single interface to a complex subsystem.
+
+<h3>Disadvantage</h3>
+
+1. **Reduced flexibility**: By providing a simplified interface to a complex system, the Facade pattern can limit the
+   flexibility of the system. Clients may only be able to perform certain tasks through the Facade, which means they may
+   need to modify the Facade or access the underlying system directly to perform more complex operations.
+
+2. **Increased coupling**: The Facade pattern can increase the coupling between the client and the subsystem, as the client is
+now dependent on the Facade to interact with the system. Changes to the Facade or the underlying system may require
+changes to the client code, which can lead to maintenance issues.
+
+3. **Limited extensibility**: The Facade pattern is designed to simplify the interface to a complex system, but it may not be
+suitable for systems that need to be highly extensible or configurable. Adding new functionality to the system may
+require changes to the Facade, which can lead to maintenance issues and increased complexity.
+
+4. **Additional overhead**: The Facade pattern introduces an additional layer of abstraction between the client and the
+subsystem, which can add overhead to the system. Depending on the complexity of the system and the number of clients
+using the Facade, this overhead can become significant.
