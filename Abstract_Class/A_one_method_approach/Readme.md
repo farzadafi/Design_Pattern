@@ -43,3 +43,5 @@ prepareAndSendReport() with each pattern and a corresponding report name.
 
 When executed, this program will print three reports to the console, one for each type of data, that show the lines in
 the input file that match the corresponding regular expression pattern.
+
+[**go to second approach**](https://github.com/farzadafi/Design_Pattern/tree/master/Abstract_Class/B_Seperated_Class_Without_Abstract)
