@@ -1,4 +1,4 @@
-import com.google.common.base.Strings;
+package main.java;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -31,7 +31,7 @@ public abstract class ExtractorReport {
                 out.append(nextLine).append("\n");
             }
         }
-        return Strings.isNullOrEmpty(out.toString()) ? "Empty file" : out.toString();
+        return out.length() == 0 ? "Empty file" : out.toString();
     }
 
     public void prepareAndSendReport(String path) throws FileNotFoundException {
