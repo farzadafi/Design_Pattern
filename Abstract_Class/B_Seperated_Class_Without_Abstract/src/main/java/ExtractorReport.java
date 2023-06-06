@@ -17,7 +17,7 @@ public class ExtractorReport {
     this.reportName = reportName;
   }
 
-  public void prepareAndSendReport(String path) throws FileNotFoundException {
+  public String parse(String path) throws FileNotFoundException {
     StringBuilder out = new StringBuilder();
     URL url = getClass().getResource(path);
     assert url != null;
@@ -26,7 +26,7 @@ public class ExtractorReport {
     if (scanner.hasNext())
       scanner.nextLine();
     else
-      return;
+      return "Empty file";
     while (scanner.hasNext()) {
       String nextLine = scanner.nextLine();
       Matcher matcher = pattern.matcher(nextLine);
@@ -35,8 +35,12 @@ public class ExtractorReport {
         out.append(nextLine).append("\n");
       }
     }
-    String report = out.length() == 0 ? "Empty file" : out.toString();
+    return out.length() == 0 ? "Empty file" : out.toString();
+  }
+
+  public void prepareAndSendReport(String path) throws FileNotFoundException {
     System.out.println("Starting report " + reportName);
+    String report = parse(path);
     System.out.println(report);
   }
 }
