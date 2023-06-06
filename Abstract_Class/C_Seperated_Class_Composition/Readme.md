@@ -1,4 +1,4 @@
-### Second approach: write in seperated class
+### Third approach: write in seperated class with Composition
 
 implementation with separate classes for each report:
 
@@ -45,4 +45,8 @@ implementation with separate classes for each report:
 4. The text file to be processed is located in the /main/resources/data.txt directory relative to the classpath. This
    file
    contains a list of lines, each of which may or may not contain email addresses, phone numbers, or words.
+
+
+[**go to fourth approach**](https://github.com/farzadafi/Design_Pattern/tree/master/Abstract_Class/D_Seperated_Class_Abstraction)
+
 
