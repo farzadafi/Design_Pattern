@@ -1,3 +1,5 @@
+package main.java;
+
 import java.util.regex.Pattern;
 
 public class EmailExtractorReport extends ExtractorReport {
