@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 public class ExtractorReport {
     
-    public static String prepareAndSendReport(Pattern pattern, String reportName, String path) throws FileNotFoundException {
+    public static String parse(Pattern pattern, String path) throws FileNotFoundException {
         StringBuilder out = new StringBuilder();
         URL url = ExtractorReport.class.getResource(path);
         assert url != null;
@@ -27,9 +27,12 @@ public class ExtractorReport {
                 out.append(nextLine).append("\n");
             }
         }
-        String report = out.length() == 0 ? "Empty file" : out.toString();
+        return out.length() == 0 ? "Empty file" : out.toString();
+    }
+
+    public static void prepareAndSendReport(Pattern pattern, String reportName, String path) throws FileNotFoundException {
         System.out.println("Starting report " + reportName);
+        String report = parse(pattern, path);
         System.out.println(report);
-        return report;
     }
 }
