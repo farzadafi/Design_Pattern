@@ -1,3 +1,37 @@
 # Factory method
 
 ![factory_method](https://github.com/farzadafi/Design_Pattern/blob/master/Factory_Method/img.png)
+
+#### overview
+
+- one of the most used design patterns in Java
+    * a creational pattern
+    * factories handle the details of object creation
+
+- this pattern defines an interface for creating an object (Creator)
+
+- when a class needs to instantiate a subclass of another class, but doesn't know which one
+    * it lets subclasses decide which class to instantiate
+- Create objects without exposing the creation logic to the client (Creator) and refers to the newly
+  created object using a common interface (Product)
+- gives us a way to encapsulate the instantiations of concrete types
+
+#### Framework
+
+- the factory method is used in frameworks
+    * frameworks exist at an abstract level
+
+- frameworks use abstract classes to define and maintain relationships between objects
+    * often responsible for creating these objects as well
+
+- the framework should not know and should not be concerned about instantiating specific objects
+    * need to defer the decisions about specific objects to the users of the framework
+
+- use the Factory Method pattern when
+    * a class cannot anticipate the class of objects it must create
+    * a class wants its subclasses to specify the objects it creates
+
+- also useful when implementing parallel class hierarchies
+    * when some of the responsibilities shift from one class to another
+
+
