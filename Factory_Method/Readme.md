@@ -34,4 +34,30 @@
 - also useful when implementing parallel class hierarchies
     * when some of the responsibilities shift from one class to another
 
+  #### Example
 
+- suppose you have two different types of televisions
+    * one with an LED screen and another with an LCD screen
+
+- If either of the tv's start to malfunction, you will call a TV repairman
+
+- the repairman must ask first what kind of TV is broken
+
+- as per your input, he will carry the required instruments with him to fix the tv
+
+#### Advantage
+
+- decouples the business logic of creation of a class from the actual logic of the class (i.e.
+  decouples the implementation of the product from its use)
+    * you can add additional products or change a product's implementation and it will not
+      affect your Creator
+    * the Creator is not tightly coupled to any Concrete Product
+
+- allows you to change the design of your application more readily
+    * makes our code more robust, less coupled and easy to extend
+
+- promotes the approach of coding to an interface rather than implementation
+
+- provides abstraction between implementation and client classes through inheritance
+
+- connects parallel class hierarchies
