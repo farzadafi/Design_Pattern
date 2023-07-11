@@ -61,3 +61,14 @@
 - provides abstraction between implementation and client classes through inheritance
 
 - connects parallel class hierarchies
+
+#### Disadvantage
+
+- makes code more difficult to read as all of your code is behind an abstraction that may in
+turn hide abstractions
+
+- can be classed as an anti-pattern when it is incorrectly used
+    * some people use it to wire up a whole application
+
+- sometimes making too many objects often can decrease performance
+
