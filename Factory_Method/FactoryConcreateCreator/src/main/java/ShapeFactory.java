@@ -1,15 +1,14 @@
 public class ShapeFactory {
 
-    public Shape getShape(String shapeType) {
+    public Shape getShape(ShapeType shapeType) {
+        Shape shape = null;
         if (shapeType == null)
-            return null;
-        else if (shapeType.equalsIgnoreCase("CIRCLE"))
-            return new Circle();
-        else if (shapeType.equalsIgnoreCase("RECTANGLE"))
-            return new Rectangle();
-        else if (shapeType.equalsIgnoreCase("SQUARE"))
-            return new Square();
-
-        return null;
+            return shape;
+        switch (shapeType) {
+            case SQUARE -> shape = new Square();
+            case CIRCLE -> shape = new Circle();
+            case RECTANGLE -> shape = new Rectangle();
+        }
+        return shape;
     }
 }
