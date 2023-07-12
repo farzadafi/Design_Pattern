@@ -31,9 +31,6 @@ image from *refactoring.guru*
     * a class cannot anticipate the class of objects it must create
     * a class wants its subclasses to specify the objects it creates
 
-- also useful when implementing parallel class hierarchies
-    * when some of the responsibilities shift from one class to another
-
   #### Example
 
 - suppose you have two different types of televisions
