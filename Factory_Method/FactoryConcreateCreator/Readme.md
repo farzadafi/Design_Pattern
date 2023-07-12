@@ -21,3 +21,6 @@ Finally, the shape object is returned.
 In the **Client** class, an instance of ShapeFactory is created.
 Using the shapeFactory object, three different shapes are created: circle, rectangle, and square.
 The draw() method is then called on each shape object, which prints a message specific to each shape.
+
+we can getShape method in ShapeFactory define in static and use it without create object on ShapeFactory class.
+some people use this static method
