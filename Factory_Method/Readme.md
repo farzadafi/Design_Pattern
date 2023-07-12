@@ -1,7 +1,7 @@
 # Factory method
 
-![factory_method](https://github.com/farzadafi/Design_Pattern/blob/master/Factory_Method/img.png)
-
+![factory_method](https://github.com/farzadafi/Design_Pattern/blob/master/image/Factory_method.png) </br>
+image from *refactoring.guru*
 #### overview
 
 - one of the most used design patterns in Java
