@@ -1,10 +1,10 @@
 package main.java;
 
-import main.java.render.ProductController;
+import main.java.render.ReaderController;
 
 public class Main {
     public static void main(String[] args) {
-        ProductController productController = new ProductController();
-        productController.listProduct();
+        ReaderController readerController = new ReaderController();
+        readerController.readFile();
     }
-}
+    }
