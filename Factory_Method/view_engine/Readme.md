@@ -1,13 +1,13 @@
 ## View Engine
 
-**this is a framework for rendering an HTML page with a different rendering engines**
+**this is a framework for rendering a file with a different rendering engines**
 
 ### view_engine_1
 
 the problem with the first view engine is, in class PageRender, in line 5:
 
 ```java
-GlassViewEngine glassViewEngine=new GlassViewEngine();
+GlassViewEngine glassViewEngine = new GlassViewEngine();
 ```
 
 in this line, the code connected to GlassViewEngine class, and if you want later to use another engine, you have to
@@ -31,8 +31,8 @@ public void listProduct(){
         }
 ```
 
-and this is bad because your user has friction with creating the view engine and he should know all thing about the view
-engine
+and this is bad because in every method of every controller , where we call the render method, we have to pass view engine
+, like GlassViewEngine or other view engine, and this is hard for client for your framework
 
 ### view_engine_3
 
