@@ -1,11 +1,11 @@
-package main.java.controller;
+package main.java.render;
 
 import main.java.viewEngine.MugViewEngine;
 import main.java.viewEngine.ViewEngine;
 
-public class MugController extends Controller {
+public class MugRender extends PageRender {
     @Override
-    protected ViewEngine createViewEngine() {
+    public ViewEngine createViewEngine() {
         return new MugViewEngine();
     }
 }
