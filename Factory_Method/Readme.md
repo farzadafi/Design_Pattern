@@ -2,6 +2,7 @@
 
 ![factory_method](https://github.com/farzadafi/Design_Pattern/blob/master/image/Factory_method.png) </br>
 image from *refactoring.guru*
+
 #### overview
 
 - one of the most used design patterns in Java
@@ -59,10 +60,20 @@ image from *refactoring.guru*
 
 - connects parallel class hierarchies
 
+- You avoid tight coupling between the creator and the concrete products.
+
+- Single Responsibility Principle. You can move the product creation code into one place in the program, making the code
+  easier to support.
+
+- Open/Closed Principle. You can introduce new types of products into the program without breaking existing client code.
+
 #### Disadvantage
 
+- The code may become more complicated since you need to introduce a lot of new subclasses to implement the pattern. The
+  best case scenario is when you’re introducing the pattern into an existing hierarchy of creator classes.
+
 - makes code more difficult to read as all of your code is behind an abstraction that may in
-turn hide abstractions
+  turn hide abstractions
 
 - can be classed as an anti-pattern when it is incorrectly used
     * some people use it to wire up a whole application
