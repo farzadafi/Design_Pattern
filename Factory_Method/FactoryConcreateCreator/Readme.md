@@ -24,3 +24,6 @@ The draw() method is then called on each shape object, which prints a message sp
 
 we can getShape method in ShapeFactory define in static and use it without create object on ShapeFactory class.
 some people use this static method
+
+some people say this is not factory method!! :|, 
+please see this example: [view_engine](https://github.com/farzadafi/Design_Pattern/tree/master/Factory_Method/view_engine)
