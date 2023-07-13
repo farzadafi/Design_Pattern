@@ -4,7 +4,7 @@
 
 ### view_engine_1
 
-the problem with the first view engine is, in class Controller, in line 5:
+the problem with the first view engine is, in class PageRender, in line 5:
 
 ```java
 GlassViewEngine glassViewEngine=new GlassViewEngine();
@@ -16,7 +16,7 @@ change this line
 ### view_engine_2
 
 in the second view engine module, create the ViewEngine interface and GlassViewEngine class implements from it, and pass
-an object with the type ViewEngine to render method in Controller class, for use in another view engine later without
+an object with the type ViewEngine to render method in PageRender class, for use in another view engine later without
 changing code
 
 what's the problem with this approach?
@@ -36,13 +36,11 @@ engine
 
 ### view_engine_3
 
-and finally, in the third view engine, add the createViewEngine method to the Controller class :
+and finally, in the third view engine, add the abstract createViewEngine method to the PageRender class :
 
 ```java
-    protected ViewEngine createViewEngine(){
-        return new GlassViewEngine();
-        }
+    public abstract ViewEngine createViewEngine();
 ```
 
-this method returns a ViewEngine object, and when we want to change the view engine, create a new controller and
-override the createViewEngine method and return the new view engine that we want, like MugController class
+this method returns a ViewEngine object, and when we want to change the view engine, create a new PageRender and
+override the createViewEngine method and return the new view engine that we want, like MugPageRender class
