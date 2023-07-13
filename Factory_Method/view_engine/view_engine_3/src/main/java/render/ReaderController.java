@@ -1,14 +1,14 @@
 package main.java.render;
 
-public class ProductController extends MugRender {
+public class ReaderController extends MugRender {
 
     private final GlassRender glassRender = new GlassRender();
 
-    public void listProduct() {
+    public void readFile() {
         System.out.println("Render with MugRender framework");
-        render("products.html ");
+        render("filename.txt");
 
         System.out.println("\nRender with GlassRender framework");
-        glassRender.render("products.html");
+        glassRender.render("filename.txt");
     }
 }
