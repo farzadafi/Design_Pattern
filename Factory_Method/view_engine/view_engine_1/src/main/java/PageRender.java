@@ -1,6 +1,6 @@
 package main.java;
 
-public class Controller {
+public class PageRender {
     public void render(String viewName) {
         GlassViewEngine glassViewEngine = new GlassViewEngine();
         String renderMatcha = glassViewEngine.render(viewName);
