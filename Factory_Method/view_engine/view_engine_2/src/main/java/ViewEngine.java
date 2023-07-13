@@ -1,5 +1,5 @@
 package main.java;
 
 public interface ViewEngine {
-    String render(String viewName);
+    String render(String path);
 }
