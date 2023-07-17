@@ -27,3 +27,33 @@ image from refactoring.guru
       making it easy to share the connection across different parts of the application.
     - By controlling the creation and management of the Connection object,
       you can ensure that it is properly closed and released when it is no longer needed.
+
+### Advantage :)
+
+1. Provides a single point of access
+   The singleton pattern provides a single point of access to an object.
+   This makes it easy to manage and use the object in different parts of the application.
+2. Ensures a single instance
+   The singleton pattern ensures that only one instance of the object is created
+   and that it is shared across the application. This can help to reduce resource usage and improve performance.
+3. Allows lazy initialization
+   The singleton pattern allows lazy initialization of the object,
+   which means that the object is not created until it is actually needed. This can help to reduce memory usage and
+   improve performance.
+4. Facilitates global access
+   The singleton pattern provides global access to the object, which makes it easy to use the object
+   in different parts of the application without having to pass it around as a parameter.
+
+### Disadvantage :(
+
+1. Can be difficult to test
+   Singleton objects can be difficult to test because they are designed to have only one instance.
+   This can make it challenging to create unit tests that isolate the behavior of the object.
+2. Can lead to tight coupling
+   The singleton pattern can lead to tight coupling between classes,
+   which can make it difficult to modify or replace the object in the future. This can make the code more brittle and
+   less
+   flexible.
+3. Can introduce global state
+   The singleton pattern can introduce global state into the application, which can make it difficult to reason about
+   the behavior of the system. Changes to the singleton object can have unintended consequences for the application.
