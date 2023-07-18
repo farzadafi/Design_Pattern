@@ -82,4 +82,9 @@ image from refactoring.guru
 
 [see code of synchronized approach](https://github.com/farzadafi/Design_Pattern/tree/master/Singleton/Synchronized_Method)
 
+### Double-checked locking approach
 
+* thread safe
+* increases performance from the synchronized approach
+
+[see code of Double-checked locking approach](https://github.com/farzadafi/Design_Pattern/tree/master/Singleton/Double_Checked_Locking)
