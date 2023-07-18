@@ -66,4 +66,14 @@ image from refactoring.guru
 4. Optionally, make the class final: This ensures that the class cannot be subclassed and the single instance cannot be
    overwritten.
 
+## main approach implement
+
+### Lazy Evaluation approach
+* it is not multi-thread safe
+* use this approach if you are not worried about multiple threads
+* this is not a recommended approach :|
+
+[see code of lazy approach](https://github.com/farzadafi/Design_Pattern/tree/master/Singleton/Lazy_Initialization)
+
+
 
