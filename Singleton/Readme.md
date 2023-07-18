@@ -40,9 +40,6 @@ image from refactoring.guru
    The singleton pattern allows lazy initialization of the object,
    which means that the object is not created until it is actually needed. This can help to reduce memory usage and
    improve performance.
-4. Facilitates global access
-   The singleton pattern provides global access to the object, which makes it easy to use the object
-   in different parts of the application without having to pass it around as a parameter.
 
 ### Disadvantage :(
 
@@ -52,8 +49,21 @@ image from refactoring.guru
 2. Can lead to tight coupling
    The singleton pattern can lead to tight coupling between classes,
    which can make it difficult to modify or replace the object in the future. This can make the code more brittle and
-   less
-   flexible.
+   less flexible.
 3. Can introduce global state
    The singleton pattern can introduce global state into the application, which can make it difficult to reason about
    the behavior of the system. Changes to the singleton object can have unintended consequences for the application.
+
+### Implementation Overview
+
+1. Make the constructor of the class private: This prevents the class from being instantiated from outside the class.
+
+2. Create a private static instance variable of the class: This will hold the single instance of the class.
+
+3. Create a public static method that returns the instance of the class: This method should create the instance if it
+   doesn't exist yet, and return the existing instance otherwise.
+
+4. Optionally, make the class final: This ensures that the class cannot be subclassed and the single instance cannot be
+   overwritten.
+
+
