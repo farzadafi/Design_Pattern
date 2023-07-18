@@ -75,5 +75,11 @@ image from refactoring.guru
 
 [see code of lazy approach](https://github.com/farzadafi/Design_Pattern/tree/master/Singleton/Lazy_Initialization)
 
+### Synchronized approach
+* thread safe
+* use when performance is not critical to your application, but, it is multithreaded
+* straightforward and effective
+
+[see code of synchronized approach](https://github.com/farzadafi/Design_Pattern/tree/master/Singleton/Synchronized_Method)
 
 
