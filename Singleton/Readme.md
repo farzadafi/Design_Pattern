@@ -69,6 +69,7 @@ image from refactoring.guru
 ## main approach implement
 
 ### Lazy Evaluation approach
+
 * it is not multi-thread safe
 * use this approach if you are not worried about multiple threads
 * this is not a recommended approach :|
@@ -76,6 +77,7 @@ image from refactoring.guru
 [see code of lazy approach](https://github.com/farzadafi/Design_Pattern/tree/master/Singleton/Lazy_Initialization)
 
 ### Synchronized approach
+
 * thread safe
 * use when performance is not critical to your application, but, it is multithreaded
 * straightforward and effective
@@ -88,3 +90,12 @@ image from refactoring.guru
 * increases performance from the synchronized approach
 
 [see code of Double-checked locking approach](https://github.com/farzadafi/Design_Pattern/tree/master/Singleton/Double_Checked_Locking)
+
+### Eager Evaluation approach
+
+* if your application always creates and uses an instance of the Singleton
+* does not use a lot of resources
+* thread safe
+* the instance is created even though client application might not be using it
+
+[see code of Eager_Evaluation](https://github.com/farzadafi/Design_Pattern/tree/master/Singleton/Eager_Evaluation)
