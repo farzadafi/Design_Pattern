@@ -22,3 +22,4 @@ They can also help improve the quality of software systems by making them more m
 
 1. [Factory_method](https://github.com/farzadafi/Design_Pattern/tree/master/Factory_Method)
 2. abstract factory
+3. [Singleton](https://github.com/farzadafi/Design_Pattern/tree/master/Singleton)
