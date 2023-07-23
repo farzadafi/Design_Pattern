@@ -99,3 +99,13 @@ image from refactoring.guru
 * the instance is created even though client application might not be using it
 
 [see code of Eager_Evaluation](https://github.com/farzadafi/Design_Pattern/tree/master/Singleton/Eager_Evaluation)
+
+### Bill Pugh approach
+
+* thread safe
+* high performance
+* ensures that the instance is only created if a client needs it
+* create the Singleton class using an inner static helper class
+* regarded as the standard method to implement singletons in Java
+
+[see code of Bill Pugh](https://github.com/farzadafi/Design_Pattern/tree/master/Singleton/Bill_Pugh)
