@@ -46,3 +46,25 @@ image from refactoring.guru
 * a better approach is to use the Builder pattern
     - provides a way to build the object step-by-step
     - provides a method that will actually return the final complex object
+
+### Advantages
+
+* it encapsulates the way a complex object is constructed
+    - separates the code of assembling from its representation
+    - hides the complex construction process and represents it as a simple process
+
+* Allow objects to be constructed in a multistep and varying process (as opposed to one-step factories)
+
+* hides the internal representation of the product from the client
+
+* product implementations can be swapped in and out because the client only sees an
+  abstract interface
+
+* focuses on "how the product will be made"
+
+### Disadvantages
+
+* constructing objects requires more domain knowledge of the client than when
+  using a Factory
+
+* requires some amount of code duplication
