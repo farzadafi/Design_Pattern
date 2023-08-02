@@ -1,5 +1,8 @@
 ### Complex Object Approach
 
+the algorithm for creating a complex object should be independent of the
+parts that make up the object and how they're assembled.
+
 If the algorithm for creating a complex object is not independent of the parts that make up the object and how they're
 assembled, then the resulting code may become tightly coupled and difficult to maintain, especially as the complexity of
 the object increases.
