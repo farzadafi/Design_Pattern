@@ -1,5 +1,8 @@
 package main;
 
+import main.builder.MovieBuilder;
+import main.builder.PdfDocumentBuilder;
+
 public class Main {
     public static void main(String[] args) {
         var presentation = new Presentation();

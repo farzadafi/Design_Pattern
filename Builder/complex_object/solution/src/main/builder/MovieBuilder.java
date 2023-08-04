@@ -1,4 +1,7 @@
-package main;
+package main.builder;
+
+import main.Movie;
+import main.Slide;
 
 public class MovieBuilder implements PresentationBuilder {
     private final Movie movie = new Movie();

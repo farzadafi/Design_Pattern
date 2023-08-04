@@ -1,4 +1,7 @@
-package main;
+package main.builder;
+
+import main.PdfDocument;
+import main.Slide;
 
 public class PdfDocumentBuilder implements PresentationBuilder {
     private final PdfDocument document = new PdfDocument();
