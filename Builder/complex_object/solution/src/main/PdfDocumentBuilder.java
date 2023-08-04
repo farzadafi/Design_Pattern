@@ -1,3 +1,5 @@
+package main;
+
 public class PdfDocumentBuilder implements PresentationBuilder {
     private final PdfDocument document = new PdfDocument();
 

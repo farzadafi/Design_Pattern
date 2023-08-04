@@ -36,7 +36,7 @@ implementation with separate classes for each report:
 2. The EmailExtractorReport, NumberExtractorReport, and WordExtractorReport classes extend the ExtractorReport class and
    define specific patterns for extracting email addresses, phone numbers, and words from the text file, respectively.
 
-3. The Main class is the entry point of the program. It creates instances of the EmailExtractorReport,
+3. The main.Main class is the entry point of the program. It creates instances of the EmailExtractorReport,
    NumberExtractorReport, and WordExtractorReport classes, and invokes their prepareAndSendReport() methods with the
    path
    of the text file to be processed. Each report extractor reads the file, extracts the relevant data, and prints the

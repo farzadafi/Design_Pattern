@@ -1,3 +1,5 @@
+package main;
+
 public class MovieBuilder implements PresentationBuilder {
     private final Movie movie = new Movie();
 

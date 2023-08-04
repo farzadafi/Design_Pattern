@@ -34,7 +34,7 @@ expression
 pattern, report name, and file path as arguments. It reads lines from the file and extracts those that match the
 pattern, then prints the resulting report to the console and returns it as a string.
 
-The **Main** class uses the ***prepareAndSendReport()*** method to extract data from a file located at
+The **main.Main** class uses the ***prepareAndSendReport()*** method to extract data from a file located at
 /main/resources/data.txt.
 It defines three regular expression patterns for extracting numbers, email addresses, and words, and calls
 prepareAndSendReport() with each pattern and a corresponding report name.

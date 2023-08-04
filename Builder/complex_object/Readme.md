@@ -15,7 +15,7 @@ any changes to the construction process would require significant modifications 
 open/close principle
 
 Using the Builder pattern, on the other hand, allows for a more modular and flexible approach to constructing complex
-objects. By separating the construction process into independent builder classes, the algorithm for constructing the
+objects. By separating the construction process into independent main.builder classes, the algorithm for constructing the
 object can remain the same, while different builders can be used to construct different variations of the object. This
 makes the code easier to maintain and modify, as changes to the construction process can be made by modifying the
-builder classes, rather than a single monolithic class.
+main.builder classes, rather than a single monolithic class.

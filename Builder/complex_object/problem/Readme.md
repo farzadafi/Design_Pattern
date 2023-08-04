@@ -1,19 +1,19 @@
 please see this package code and think about what problem of this code?
-Slide-> Presentation-> PresentationFormat-> PdfDocument-> Movie
+main.Slide-> main.Presentation-> PresentationFormat-> main.PdfDocument-> main.Movie
 
 ok, now see problems of this code:
 
 ```java
     public void export(PresentationFormat format){
         if(format==PresentationFormat.PDF){
-        var pdf=new PdfDocument();
-        for(Slide slide:slides){
+        var pdf=new main.PdfDocument();
+        for(main.Slide slide:slides){
         pdf.addPage(slide.getText());
         }
         }
         else if(format==PresentationFormat.MOVIE){
-        var movie=new Movie();
-        for(Slide slide:slides){
+        var movie=new main.Movie();
+        for(main.Slide slide:slides){
         movie.addFrame(slide.getText(),3);
         }
         }
@@ -24,11 +24,11 @@ ok, now see problems of this code:
    presentation format, we have to come back and modify this method
 
 2. The second problem is the tight coupling between the presentation class and these other classes
-   lik PdfDocument, Movie, and so on, so as we support more presentation format, out coupling
+   lik main.PdfDocument, main.Movie, and so on, so as we support more presentation format, out coupling
    increase
 
 3. The third problem is that our presentation class should also have knowledge of the
-   structure of these classes, For example , it knows that our PdfDocument have pages:
+   structure of these classes, For example , it knows that our main.PdfDocument have pages:
     ```java
         pdf.addPage(slide.getText());
     ```

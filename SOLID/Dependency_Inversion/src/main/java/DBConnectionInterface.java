@@ -11,7 +11,7 @@ class MySqlConnection implements DBConnectionInterface {
 }
 
 class PasswordReminder {
-    private int dbConnection;
+    private MySqlConnection dbConnection;
 
     public PasswordReminder(MySqlConnection dbConnection) {
         this.dbConnection = dbConnection;

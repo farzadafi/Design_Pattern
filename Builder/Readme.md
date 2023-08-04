@@ -4,12 +4,12 @@
 
 image from refactoring.guru
 
-* the builder design pattern separates the construction of a complex object from its
+* the main.builder design pattern separates the construction of a complex object from its
   representation
 * uses the same construction processes to create the same object
 * however, these processes can create different representations of the object
 * uses a step-by-step approach to create the object
-* the builder class is independent of other objects
+* the main.builder class is independent of other objects
 * useful when creating the object is very complex and is independent of the assembly of
   the parts of the object
 
