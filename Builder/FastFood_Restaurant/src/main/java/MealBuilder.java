@@ -1,7 +1,7 @@
-import item.ChickenBurger;
-import item.Coke;
-import item.Pepsi;
-import item.VegBurger;
+import item.burger.ChickenBurger;
+import item.drink.Coke;
+import item.drink.Pepsi;
+import item.burger.VegBurger;
 
 public class MealBuilder {
 

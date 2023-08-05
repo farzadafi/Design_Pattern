@@ -1,5 +1,6 @@
-package item;
+package item.drink;
 
+import item.Item;
 import packing.Bottle;
 import packing.Packing;
 
