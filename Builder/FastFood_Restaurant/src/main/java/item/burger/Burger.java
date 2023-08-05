@@ -1,5 +1,6 @@
-package item;
+package item.burger;
 
+import item.Item;
 import packing.Packing;
 import packing.Wrapper;
 

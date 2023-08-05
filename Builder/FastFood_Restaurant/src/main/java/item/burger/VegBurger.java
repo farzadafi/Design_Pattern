@@ -1,4 +1,4 @@
-package item;
+package item.burger;
 
 public class VegBurger extends Burger {
 
@@ -9,6 +9,6 @@ public class VegBurger extends Burger {
 
    @Override
    public String name() {
-      return "Veg item.Burger";
+      return "Veg item.burger.Burger";
    }
 }
