@@ -39,3 +39,30 @@ second: <br>
 - update the database when needed
 - reduces the number of database calls
 
+#### When we use from prototype?
+
+1. When we want to create multiple instances of an object that share common properties , we can use the
+   prototype pattern in Java.
+   For example, let's say we are developing a game and need to create multiple enemies with
+   different characteristics, such as health, strength, and speed. Instead of creating separate classes for each enemy,
+   we
+   can use a prototype object to define the common properties and create clones from it. This helps in efficient memory
+   usage and reduces the code duplication.
+
+2. Another scenario where the prototype pattern can be used is when we need to create copies of complex objects, but the
+   process of creating these objects is expensive and time-consuming. By using the prototype pattern, we can create a
+   prototype object and clone it whenever needed, thereby saving resources and improving performance. For instance,
+   consider a scenario where we are developing a graphics editor and need to duplicate shapes, fonts, or other graphical
+   elements. The prototype pattern allows us to clone these objects instead of recreating them from scratch.
+
+3. In some cases, we may want to dynamically add or remove functionality from an object at runtime. The prototype
+   pattern can support this requirement by allowing us to clone an existing object and modify its behavior as needed.
+   For example, suppose we are building a software system with multiple user roles (e.g., admin, manager, employee).
+   Each role may have some unique permissions or functionality. By using the prototype pattern, we can create a base
+   prototype object for the common functionality and clone it for each role, adding or removing specific features as
+   required.
+
+4. When dealing with multithreaded environments, the prototype pattern can be useful for thread safety. Instead of
+   creating new objects by initializing them in threads, we can use a prototype object and clone it within each thread.
+   This ensures that each thread has its own separate instance and avoids any synchronization issues that may arise from
+   concurrent object creation or modification.
