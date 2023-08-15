@@ -1,4 +1,4 @@
-package main.java;
+package main.java.shape;
 
 public class Circle implements Component{
     private int radius;
