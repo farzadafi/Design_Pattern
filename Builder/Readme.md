@@ -68,3 +68,8 @@ image from refactoring.guru
   using a Factory
 
 * requires some amount of code duplication
+
+### Approach 
+
+[complex_object](https://github.com/farzadafi/Design_Pattern/tree/master/Builder/complex_object)
+[construction_process](https://github.com/farzadafi/Design_Pattern/tree/master/Builder/construction_process)
