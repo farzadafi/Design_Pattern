@@ -66,3 +66,22 @@ second: <br>
    creating new objects by initializing them in threads, we can use a prototype object and clone it within each thread.
    This ensures that each thread has its own separate instance and avoids any synchronization issues that may arise from
    concurrent object creation or modification.
+
+#### Advantage
+
+1. **Object creation efficiency** : The Prototype pattern allows objects to be cloned, reducing the need for expensive
+   object
+   creation operations. Instead of creating an object from scratch, a new object can be created by cloning an existing
+   prototype.
+
+2. **Reduced duplication of code**: With the Prototype pattern, you can define a set of initial properties in a
+   prototype
+   object and then clone it to create new instances. This helps to avoid duplicating code for initializing objects with
+   identical properties.
+
+3. **Flexibility in object creation**: By allowing objects to be cloned, the Prototype pattern provides flexibility in
+   creating new object instances. You can easily create variations of an existing object by modifying its cloned version
+   without affecting the original object.
+4. **Improves performance**: The use of cloning in the Prototype pattern can improve performance by avoiding unnecessary
+   object creation operations. Cloning an existing prototype is generally faster than creating a completely new object
+   from scratch.
