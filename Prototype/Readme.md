@@ -22,5 +22,20 @@ image from refactoring.guru
     - should not be done by any other class
     - whether to perform a shallow or deep copy of the Object depends on the requirements and design
 
+#### Example
 
+first: <br>
+In some games, we want trees or buildings in the background. We may realize that we don't have to create new trees or
+buildings and render them on the screen every time the character moves.
+So, we create an instance of the tree first. Then we can create as many trees as we want from this instance (prototype)
+and update their positions. We may also choose to change the color of the trees for a new level in the game.
+
+second: <br>
+
+- suppose we have an Object that loads data from database
+- we need to modify this data in our program multiple times
+- not a good idea to create the Object using the new keyword and load all the data again from database
+- we can cache the object, returns a clone of the object on the next request
+- update the database when needed
+- reduces the number of database calls
 
