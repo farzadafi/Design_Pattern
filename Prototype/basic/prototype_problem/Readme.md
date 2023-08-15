@@ -19,4 +19,5 @@ please double-check contextMenu class for find problem
 how to solve these problem?
 add a clone method to component interface, and override this method on shape class, and use this method
 in duplicate method on context menu class, this is prototype
-p
+
+[go to solution module](https://github.com/farzadafi/Design_Pattern/tree/master/Prototype/basic/prototype_solution)
