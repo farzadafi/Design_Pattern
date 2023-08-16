@@ -85,3 +85,10 @@ second: <br>
 4. **Improves performance**: The use of cloning in the Prototype pattern can improve performance by avoiding unnecessary
    object creation operations. Cloning an existing prototype is generally faster than creating a completely new object
    from scratch.
+
+#### Disadvantage
+
+1. **Complexity**: Implementing the Prototype pattern in Java requires defining and managing the cloning process for each
+   concrete prototype. This can add complexity to the codebase, making it harder to understand and maintain.
+
+2.  **Complex object** : Cloning complex objects that have circular references might be very tricky.
