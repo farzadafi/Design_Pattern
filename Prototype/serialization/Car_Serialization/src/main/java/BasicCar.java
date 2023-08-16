@@ -1,6 +1,8 @@
+package Prototype.serialization.Car_Serialization.src.main.java;
+
 import java.io.*;
 
-public class BasicCar implements Serializable{
+public class BasicCar implements Serializable {
     private String modelName;
     private Long price;
 

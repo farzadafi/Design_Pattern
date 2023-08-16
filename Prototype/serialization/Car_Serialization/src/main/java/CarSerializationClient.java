@@ -1,6 +1,8 @@
+package Prototype.serialization.Car_Serialization.src.main.java;
+
 import java.io.IOException;
 
-public class Client {
+public class CarSerializationClient {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         BasicCar basicCar = new BasicCar("ford", 4000L);
         System.out.println(basicCar.hashCode());
