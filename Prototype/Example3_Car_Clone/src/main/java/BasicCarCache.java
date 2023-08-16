@@ -1,3 +1,7 @@
+import car.BasicCar;
+import car.Ford;
+import car.Nano;
+
 import java.util.Hashtable;
 
 public class BasicCarCache {
@@ -10,7 +14,7 @@ public class BasicCarCache {
     }
 
     public BasicCar getBasicCar(String type) {
-        if(hashtable.containsKey(type))
+        if (hashtable.containsKey(type))
             return hashtable.get(type).clone();
         return null;
     }
