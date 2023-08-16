@@ -9,5 +9,7 @@ public class Client {
 
         Employee copyEmployee = new Employee(orginalEmployee);
         System.out.println("\ncopy Employee is: " + copyEmployee);
+
+        System.out.println("is Equal: " + orginalEmployee.equals(copyEmployee));
     }
 }
