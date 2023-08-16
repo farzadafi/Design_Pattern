@@ -92,3 +92,9 @@ second: <br>
    concrete prototype. This can add complexity to the codebase, making it harder to understand and maintain.
 
 2.  **Complex object** : Cloning complex objects that have circular references might be very tricky.
+
+### How to implement?
+1. [first read basic code](https://github.com/farzadafi/Design_Pattern/tree/master/Prototype/basic)
+2. [read cloneable approach](https://github.com/farzadafi/Design_Pattern/tree/master/Prototype/cloneable_interface)
+3. [read copy constructor approach](https://github.com/farzadafi/Design_Pattern/tree/master/Prototype/copy_constructor)
+4. [read serialization approach](https://github.com/farzadafi/Design_Pattern/tree/master/Prototype/serialization)
