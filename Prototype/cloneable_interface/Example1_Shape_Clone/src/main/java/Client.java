@@ -1,3 +1,5 @@
+import shape.Shape;
+
 public class Client {
     public static void main(String[] args) {
         ShapeCache.loadCache();
