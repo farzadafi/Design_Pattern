@@ -1,13 +1,13 @@
 package shape;
 
-public class Sqaure extends Shape {
+public class Square extends Shape {
 
-    public Sqaure() {
+    public Square() {
         type = "Square";
     }
 
     @Override
-    protected void draw() {
+    public void draw() {
         System.out.println("Inside Square::draw() method.");
     }
 }

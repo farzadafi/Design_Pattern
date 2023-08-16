@@ -1,7 +1,7 @@
 import shape.Circle;
 import shape.Rectangle;
 import shape.Shape;
-import shape.Sqaure;
+import shape.Square;
 
 import java.util.Hashtable;
 
@@ -18,9 +18,9 @@ public class ShapeCache {
         circle.setId("1");
         shapeHashtable.put(circle.getId(), circle);
 
-        Sqaure sqaure = new Sqaure();
-        sqaure.setId("2");
-        shapeHashtable.put(sqaure.getId(), sqaure);
+        Square square = new Square();
+        square.setId("2");
+        shapeHashtable.put(square.getId(), square);
 
         Rectangle rectangle = new Rectangle();
         rectangle.setId("3");
