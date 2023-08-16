@@ -1,3 +1,5 @@
+package Prototype.copy_constructor.Employee_CopyConstructor.src.main.java;
+
 import java.util.Date;
 
 public class Employee {
@@ -12,6 +14,16 @@ public class Employee {
         this.startDate = new Date(employee.startDate.getTime());
     }
 
+    //all args constructor
+    public Employee(int id, String name, Date startDate) {
+        this.id = id;
+        this.name = name;
+        this.startDate = startDate;
+    }
+
+    //no args constructor
+    public Employee() {
+    }
 
     public int getId() {
         return id;
@@ -27,15 +39,6 @@ public class Employee {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Employee(int id, String name, Date startDate) {
-        this.id = id;
-        this.name = name;
-        this.startDate = startDate;
-    }
-
-    public Employee() {
     }
 
     @Override
