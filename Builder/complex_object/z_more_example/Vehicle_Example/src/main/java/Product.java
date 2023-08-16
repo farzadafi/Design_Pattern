@@ -1,3 +1,5 @@
+package Builder.complex_object.z_more_example.Vehicle_Example.src.main.java;
+
 import java.util.LinkedList;
 
 public class Product {
