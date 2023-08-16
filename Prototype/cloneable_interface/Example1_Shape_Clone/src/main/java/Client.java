@@ -12,5 +12,8 @@ public class Client {
 
         Shape shape3 = ShapeCache.getShape("3");
         System.out.println("Shape " + shape3.getType());
+
+        Shape shape4 = ShapeCache.getShape("3");
+        System.out.println(shape4 == shape3);
     }
 }
