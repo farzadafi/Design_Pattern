@@ -35,3 +35,7 @@ compatibility and is not recommended to be used in new code.
     -  a shallow copy refers to copying the values of the fields from the original object to the new object without duplicating any shared references.
     - This means that if the original object contains any references to other objects, the new object will have those references pointing to the same objects as the original object.
     - In other words, modifications made to the shared objects will be reflected in both the original and cloned objects.
+
+
+1. [first read shape_clone](https://github.com/farzadafi/Design_Pattern/tree/master/Prototype/cloneable_interface/Shape_Clone)
+2.[second read car_clone](https://github.com/farzadafi/Design_Pattern/tree/master/Prototype/cloneable_interface/Car_Clone) 
