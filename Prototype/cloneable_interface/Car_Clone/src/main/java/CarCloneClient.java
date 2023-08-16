@@ -1,6 +1,6 @@
-package Prototype.Car_Clone.src.main.java;
+package Prototype.cloneable_interface.Car_Clone.src.main.java;
 
-import Prototype.Car_Clone.src.main.java.car.BasicCar;
+import Prototype.cloneable_interface.Car_Clone.src.main.java.car.BasicCar;
 
 public class CarCloneClient {
     public static void main(String[] args) {

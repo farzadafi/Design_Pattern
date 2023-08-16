@@ -1,4 +1,4 @@
-package Prototype.Car_Clone.src.main.java.car;
+package Prototype.cloneable_interface.Car_Clone.src.main.java.car;
 
 public class Ford extends BasicCar {
 
