@@ -1,3 +1,8 @@
+import shape.Circle;
+import shape.Rectangle;
+import shape.Shape;
+import shape.Sqaure;
+
 import java.util.Hashtable;
 
 public class ShapeCache {
