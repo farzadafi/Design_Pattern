@@ -1,6 +1,8 @@
-import car.BasicCar;
-import car.Ford;
-import car.Nano;
+package Prototype.Car_Clone.src.main.java;
+
+import Prototype.Car_Clone.src.main.java.car.BasicCar;
+import Prototype.Car_Clone.src.main.java.car.Ford;
+import Prototype.Car_Clone.src.main.java.car.Nano;
 
 import java.util.Hashtable;
 

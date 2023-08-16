@@ -1,4 +1,4 @@
-package car;
+package Prototype.Car_Clone.src.main.java.car;
 
 public class BasicCar implements Cloneable {
     private String modelName;
