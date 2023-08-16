@@ -1,3 +1,5 @@
+package Builder.construction_process.z_more_example.Bank_Account.src.main.java;
+
 public class BankAccount {
 
     private long accountNumber;
