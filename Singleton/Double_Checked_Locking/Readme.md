@@ -4,7 +4,8 @@
     public static Singleton getInstance() {
         if (Instance == null)
             synchronized (Singleton.class) {
-                Instance = new Singleton();
+                if (Instance == null)
+                    Instance = new Singleton();
             }
         return Instance;
     }
